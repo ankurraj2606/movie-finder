@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 14px;
+}
+
+.App {
+  font-family: sans-serif;
+  max-width: 1280px;
+  margin: 16px auto;
+}
+
+.movie-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 4rem 7rem;
+}
+
+.movie-card {
+  width: 100%;
+  max-width: 350px;
+}
+
+.movie-card p,
+.movie-card h4,
+.movie-card .genres {
+  padding: 4px 6px;
+}
+
+.card-title {
+  font-size: 20px;
+}
+
+.card-overview {
+  font-size: 14px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.4em;
+  max-height: calc(1.4em * 3);
+}
+
+.card-rated-by {
+  padding-left: 16px;
+  padding-right: 8px;
+}
+
+.card-pop {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-container {
+  background-image: var(--bg-backdrop-image);
+  display: flex;
+  justify-content: center;
+  height: 350px;
+  border-radius: 8px;
+}
+
+.genres {
+  display: flex;
+  gap: 0.5em;
+}
+
+.genre-pills {
+  padding: 6px 12px;
+  background-color: lightgray;
+  border-radius: 16px;
+}
+
+@media (max-width: 480px) {
+  .movie-container {
+    justify-content: center;
+  }
+}
